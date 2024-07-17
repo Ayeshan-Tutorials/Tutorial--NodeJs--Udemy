@@ -3,7 +3,7 @@ const http = require('http')  // include a file path or core module
 
 
 const server = http.createServer((req,res) => {
-    console.log(req);
+    console.log(req.url , req.method, req.headers);
     //process.exit - to end the server
 })
 
