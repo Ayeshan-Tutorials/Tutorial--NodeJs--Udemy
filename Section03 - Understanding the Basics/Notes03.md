@@ -37,5 +37,10 @@ talsk about the asynchronus natire of the node.js.
 
 Watch the 2 videos to understand this.
 
+# 38 - Looking Behind the Scence
 
+Node js only use one thread.
 
+ ![alt text](<SS/img 6.png>)  
+
+ ![alt text](<SS/img 7.png>)
