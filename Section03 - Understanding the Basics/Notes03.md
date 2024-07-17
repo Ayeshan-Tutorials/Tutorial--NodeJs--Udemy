@@ -19,3 +19,7 @@
 
 ![alt text](<SS/img 4.png>)
 
+# 31 - Sending Response
+
+View the output in the Network tab in dev tools ( inspect )
+
