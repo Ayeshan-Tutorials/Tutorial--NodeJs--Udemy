@@ -27,5 +27,9 @@ View the output in the Network tab in dev tools ( inspect )
 
 message.txt file has been generated when the text in insert theough the input field
 
+# 35 - Parsing Request Bodies 
+
+![alt text](<SS/img 5.png>)
+
 
 
