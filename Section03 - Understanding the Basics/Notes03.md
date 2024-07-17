@@ -44,3 +44,7 @@ Node js only use one thread.
  ![alt text](<SS/img 6.png>)  
 
  ![alt text](<SS/img 7.png>)
+
+ # 40 - Wrap Up
+ 
+ ![alt text](<SS/img 8.png>)
