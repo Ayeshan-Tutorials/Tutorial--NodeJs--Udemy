@@ -23,5 +23,9 @@
 
 View the output in the Network tab in dev tools ( inspect )
 
+# 34 - Redirecting Requests
+
+message.txt file has been generated when the text in insert theough the input field
+
 
 
