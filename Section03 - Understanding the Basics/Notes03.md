@@ -31,5 +31,11 @@ message.txt file has been generated when the text in insert theough the input fi
 
 ![alt text](<SS/img 5.png>)
 
+# 36 / 37 - Understanding the Event Driven Code Execution / Blocking and NonBlocking code
+
+talsk about the asynchronus natire of the node.js.
+
+Watch the 2 videos to understand this.
+
 
 
