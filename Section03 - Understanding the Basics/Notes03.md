@@ -12,3 +12,9 @@
 - fs
 - path
 - os
+
+
+# 28 - The Node LifeCycle & Event Loop
+
+
+![alt text](<SS/img 4.png>)
