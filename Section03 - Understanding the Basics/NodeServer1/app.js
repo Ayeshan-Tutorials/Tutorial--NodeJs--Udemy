@@ -1,58 +1,12 @@
 const http = require('http')  // include a file path or core module
-const fs = require('fs');
+const routes = require('./routes')
 
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(routes)
 
-    const url = req.url;
-    const method = req.method;
-
-    if (url === "/") {
-        res.write('<html>')
-        res.write('<head><title>Enter Message</title></head>')
-        res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>');
-        res.write('</html>')
-        return res.end();  // return used to exit the function. Because after res.end, we should not call any other res.write etc.
-    }
-
-    if (url === "/message" && method === "POST") {
-        const body =[];
-        req.on('data', (chunk)  =>  {
-            console.log(chunk)
-            body.push(chunk);
-        })
-        req.on('end', () => {
-            const parsedBody = Buffer.concat(body).toString();
-            //console.log(parsedBody);
-            const message = parsedBody.split('=')[1]
-            fs.writeFileSync('message.txt', message, (err) => {
-                res.statusCode = 302;
-                res.setHeader('Location', '/')
-                return res.end();
-            });
-        })
-    }
-    res.setHeader('Contenet-Type', 'text/html')
-    res.write('<html>')
-    res.write('<head><title>My First Web Page</title></head>')
-    res.write('<body><h1>Hello World</h1></body>')
-    res.write('</html>')
-    res.end();
-})
-
-
+// const server = http.createServer(routes.handler)
+// console.log(routes.someText);
 
 server.listen(3000)
 
 
-
-
-// Extra Methods
-
-///Methos 1
-// http.createServer(function(req,res))
-
-///Methos 2
-// http.createServer(requestListner)
-// function requestListner(req,res) {
-// }
